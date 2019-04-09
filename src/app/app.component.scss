@@ -3,33 +3,28 @@
   margin-top: 100px;
   width: 1025px;
 
-  &__cardA, &__cardB {
+  &__cardA {
     color: #fff;
-    box-shadow: 0 !important;
-    border-radius: 0px;
     background-color: #3bbec0;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
-  &__cardA::after, &__cardB::after {
+  &__cardA::after {
     content: "";
     opacity: 0;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
-  &__cardA:hover, &__cardB:hover {
+  &__cardA:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     -webkit-transform: scale(1.25, 1.25);
     transform: scale(1.01, 1.01);
   }
-  &__cardA:hover::after, &__cardB:hover::after {
+  &__cardA:hover::after {
     opacity: 1;
   }
   &__cardA {
     padding-bottom: 0;
-  }
-  &__cardB {
-    padding: 0;
   }
 }
 

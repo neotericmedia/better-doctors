@@ -1,21 +1,14 @@
-<mat-toolbar color="primary">
-  Structuring Angular Apps with Angular Material Components
-</mat-toolbar>
-
-
-
-
-
-
-
 <div class="container o-wrapper">
   <div class="row">
 
     <div class="col-sm-12 col-md-12">
-      <!-- Left Card -->
+
       <mat-card [@cardA]="cardA" class="o-wrapper__cardA">
 
-          <!-- <app-weather [doctors]="doctors" [getCities]="getCities" (selectedCity)='getCityUrl($event)'></app-weather> -->
+        <span>Lat: {{mapService.currentLat}} </span>
+        <span>Long: {{mapService.currentLong}}</span>
+        <div #gmap style="width:100%;height:300px"></div>
+        
         <app-doctors [doctors]="doctors"></app-doctors>
 
         <!-- <div *ngFor="let data of doctors">
